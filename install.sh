@@ -3,7 +3,6 @@
 # Source necessary scripts
 source scripts/check_sudo.sh
 source scripts/editions/core.sh
-source scripts/env_checker.sh
 source scripts/editions/home.sh
 source scripts/editions/security.sh
 source scripts/editions/htb.sh
