@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Function to execute a command and handle errors
 run() {
     echo "Executing: $2"
     eval "$1"

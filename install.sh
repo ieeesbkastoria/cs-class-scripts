@@ -7,7 +7,6 @@ source scripts/editions/security.sh
 source scripts/editions/htb.sh
 source scripts/editions/headless.sh
 
-# Function to display menu
 display_menu() {
     echo "========== ParrotOS Editions Installer =========="
     echo "1) Install Core Edition: Minimal installation for server use."
