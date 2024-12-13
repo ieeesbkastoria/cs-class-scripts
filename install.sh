@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Source necessary scripts
 source scripts/check_sudo.sh
 source scripts/editions/core.sh
 source scripts/editions/home.sh
@@ -8,6 +7,7 @@ source scripts/editions/security.sh
 source scripts/editions/htb.sh
 source scripts/editions/headless.sh
 
+# Function to display menu
 display_menu() {
     echo "========== ParrotOS Editions Installer =========="
     echo "1) Install Core Edition: Minimal installation for server use."
@@ -19,26 +19,21 @@ display_menu() {
     echo "================================================="
 }
 
+# Check for sudo privileges
 check_sudo
 
-echo "🔧 Validating environment setup..."
-ensure_environment || { 
-    echo "❌ Environment validation failed. Please resolve the issues and try again."
-    exit 1
-}
-echo "✅ Environment is ready."
-
+# Main installation loop
 while true; do
     display_menu
     read -p "Enter the option number: " option
     case $option in
-
-    1) core ;;                                    # Install Core Edition
-        2) core && home ;;                            # Install Core + Home Edition
-        3) core && security ;;                        # Install Core + Security Edition
-        4) core && htb ;;                             # Install Core + HTB Edition
-        5) core && headless ;;                        # Install Core + Headless Edition
-        6) echo "Exiting..."; exit 0 ;;               # Exit script
-        *) echo "Invalid option. Please try again." ;; # Invalid input handling
+        1) core ;;
+        2) core && home ;;
+        3) core && security ;;
+        4) core && htb ;;
+        5) core && headless ;;
+        6) echo "Exiting..."; exit 0 ;;
+        *) echo "Invalid option. Please try again." ;;
     esac
 done
+
