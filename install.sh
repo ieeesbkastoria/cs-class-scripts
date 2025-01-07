@@ -7,6 +7,7 @@ source scripts/editions/security.sh
 source scripts/editions/htb.sh
 source scripts/editions/headless.sh
 
+# Function to display menu
 display_menu() {
     echo "========== ParrotOS Editions Installer =========="
     echo "1) Install Core Edition: Minimal installation for server use."
@@ -18,8 +19,10 @@ display_menu() {
     echo "================================================="
 }
 
+# Check for sudo privileges
 check_sudo
 
+# Main installation loop
 while true; do
     display_menu
     read -p "Enter the option number: " option
@@ -33,3 +36,4 @@ while true; do
         *) echo "Invalid option. Please try again." ;;
     esac
 done
+
