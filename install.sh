@@ -14,8 +14,7 @@ display_menu() {
     echo "2) Install Home Edition: Full desktop environment for daily use."
     echo "3) Install Security Edition: Tools for security testing and auditing."
     echo "4) Install Hack The Box Edition: Customized environment for Hack The Box labs."
-    echo "5) Install Headless Edition: Minimal installation without GUI for servers."
-    echo "6) Exit"
+    echo "5) Exit"
     echo "================================================="
 }
 
@@ -31,8 +30,7 @@ while true; do
         2) core && home ;;
         3) core && security ;;
         4) core && htb ;;
-        5) core && headless ;;
-        6) echo "Exiting..."; exit 0 ;;
+        5) echo "Exiting..."; exit 0 ;;
         *) echo "Invalid option. Please try again." ;;
     esac
 done

@@ -1,4 +1,0 @@
-parrot-core-lite
-base-files
-parrot-apps-basics
-parrot-drivers
