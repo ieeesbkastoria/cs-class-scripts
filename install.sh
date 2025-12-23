@@ -39,7 +39,8 @@ display_menu() {
     echo "╔═════════════════════════════════════════════╗"
     echo "║        UoWM Debian Conversion Script        ║"
     echo "╠═════════════════════════════════════════════╣"
-    echo "║ 1) Install all of the department's programs ║"
+    echo "║ 1) core					║" 
+    echo "║    Install all of the department's programs ║"
     echo "║ 2) Exit                                     ║"
     echo "╚═════════════════════════════════════════════╝"
 }
@@ -58,11 +59,6 @@ install_edition() {
     
     case $edition in
         "core") core ;;
-        "home") 
-            core && home 
-            ;;
-        "security") core && security ;;
-        "htb") core && htb ;;
         *) log "Invalid edition selected"; return 1 ;;
     esac
     
