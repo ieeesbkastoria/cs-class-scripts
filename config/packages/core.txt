@@ -6,7 +6,7 @@ bison
 build-essential
 codium
 dbeaver-ce
-eclipse-jdt
+default-jdk
 flex
 freecad
 gcc
