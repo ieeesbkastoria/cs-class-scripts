@@ -36,19 +36,12 @@ check_system() {
 
 display_menu() {
     clear
-    echo "╔════════════════════════════════════════════╗"
-    echo "║          Debian Conversion Script          ║"
-    echo "╠════════════════════════════════════════════╣"
-    echo "║ 1) Install Core Edition                    ║"
-    echo "║    Minimal installation for server use     ║"
-    echo "║ 2) Install Home Edition                    ║"
-    echo "║    Full desktop environment for daily use  ║"
-    echo "║ 3) Install Security Edition                ║"
-    echo "║    Tools for security testing and auditing ║"
-    echo "║ 4) Install Hack The Box Edition            ║"
-    echo "║    Customized environment for HTB labs     ║"
-    echo "║ 5) Exit                                    ║"
-    echo "╚════════════════════════════════════════════╝"
+    echo "╔═════════════════════════════════════════════╗"
+    echo "║        UoWM Debian Conversion Script        ║"
+    echo "╠═════════════════════════════════════════════╣"
+    echo "║ 1) Install all of the department's programs ║"
+    echo "║ 2) Exit                                     ║"
+    echo "╚═════════════════════════════════════════════╝"
 }
 
 install_edition() {
@@ -84,10 +77,7 @@ while true; do
     read -p "Enter the option number: " option
     case $option in
         1) install_edition "core" ;;
-        2) install_edition "home" ;;
-        3) install_edition "security" ;;
-        4) install_edition "htb" ;;
-        5) log "Exiting installation script..."; exit 0 ;;
+        2) log "Exiting installation script..."; exit 0 ;;
         *) echo "Invalid option. Please try again." ;;
     esac
     
