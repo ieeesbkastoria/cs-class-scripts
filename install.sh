@@ -40,7 +40,7 @@ display_menu() {
     echo "╔═════════════════════════════════════════════╗"
     echo "║        UoWM Debian Script                   ║"
     echo "╠═════════════════════════════════════════════╣"
-    echo "║ 1) Core					║" 
+    echo "║ 1) Core					                    ║" 
     echo "║    Install all of the department's programs ║"
     echo "║ 2) Exit                                     ║"
     echo "╚═════════════════════════════════════════════╝"
