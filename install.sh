@@ -6,7 +6,8 @@ TIMESTAMP=$(date +%Y%m%d_%H%M%S)
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG_FILE"
 }
-
+source scripts/check_sudo.sh
+check_sudo
 source scripts/run.sh
 source scripts/editions/core.sh
 source scripts/editions/home.sh
