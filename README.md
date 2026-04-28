@@ -1,4 +1,4 @@
-# Debian Conversion Script
+# UoWM CS Stack Installer Script
 
 ## ⚖️ License & Authors
 

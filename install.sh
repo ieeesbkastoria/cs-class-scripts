@@ -35,10 +35,10 @@ check_system() {
 display_menu() {
     clear
     echo "╔═════════════════════════════════════════════╗"
-    echo "║             UoWM Debian Script              ║"
+    echo "║       UoWM CS Stack Installer Script        ║"
     echo "╠═════════════════════════════════════════════╣"
     echo "║ 1) Core					                    ║" 
-    echo "║    Install all of the department's programs ║"
+    echo "║    Proceed with installation                ║"
     echo "║ 2) Exit                                     ║"
     echo "╚═════════════════════════════════════════════╝"
 }
